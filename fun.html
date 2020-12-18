@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"> <img src="logo.png" alt="logo" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's just not Coffee <br>It's <span class="letter">Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta nesciunt error, corporis ad ducimus, fuga, natus praesentium sapiente libero aliquam molestias sed sint perferendis eveniet blanditiis incidunt debitis. Ipsam?</p>
+                <a href="#" class="link">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" alt="stabuck" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li data-color="green"><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143');changeColorStarbucks('#017143');changeColorLink('#017143');" ></li>
+            <li data-color="pink"><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495');changeColorStarbucks('#eb7495');changeColorLink('#eb7495');changecolorToggle('#eb7495')" ></li>
+            <li data-color="purple"><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1');changeColorStarbucks('#d752b1');changeColorLink('#d752b1');changecolorToggle('#d752b1')" ></li>
+        </ul>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
